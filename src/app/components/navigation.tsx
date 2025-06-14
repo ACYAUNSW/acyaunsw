@@ -10,7 +10,7 @@ export default function Navigation() {
   const linkStyle = (path: string) =>
     pathname === path
       ? 'border-b border-black'
-      : 'border-b border-transparent hover:border-black transition';
+      : 'border-b border-transparent hover:border-red-700 transition';
 
   return (
     <nav className="sticky bg-white/50 backdrop-blur-xs text-md">
