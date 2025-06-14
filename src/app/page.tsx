@@ -16,7 +16,7 @@ export default function Home() {
             <Image src="/placeholder-banner.jpg" alt="ACYA Event" width={1200} height={800} className="h-screen w-full object-cover brightness-80" />
           </Parallax>
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-4 z-10 flex flex-col justify-center items-center">
-            <h1 className="bg-gradient-to-tr from-acya to-red-900/80 bg-clip-text text-transparent text-7xl font-semibold">UNSW</h1>
+            <h1 className="bg-gradient-to-tr from-acya to-red-700/80 bg-clip-text text-transparent text-7xl font-semibold">UNSW</h1>
             <h1 className="w-max text-white text-5xl font-semibold">
               Australia–China Youth Association
             </h1>
@@ -26,7 +26,6 @@ export default function Home() {
           </div>
         </div>
       </ParallaxProvider>
-
       <div className="mx-50 my-36 space-y-16">
         <Header text="Our" important="mission" />
         <p>
