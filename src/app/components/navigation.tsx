@@ -9,11 +9,11 @@ export default function Navigation() {
 
   const linkStyle = (path: string) =>
     pathname === path
-      ? 'border-b border-black'
-      : 'border-b border-transparent hover:border-red-700 transition';
+      ? 'border-b-3 border-black/70'
+      : 'border-b-3 border-transparent hover:border-red-700/70 transition';
 
   return (
-    <nav className="sticky bg-white/50 backdrop-blur-xs text-md">
+    <nav className="sticky top-0 z-50 bg-white/50 backdrop-blur-lg text-md">
       <ul className="flex w-full h-14 px-36 justify-evenly items-center space-x-16">
         <li className="flex flex-1 justify-center items-center">
           <Link href="/">       
