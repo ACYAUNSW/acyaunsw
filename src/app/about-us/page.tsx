@@ -2,7 +2,6 @@
 
 import Exec from "../components/exec";
 import Header from "../components/header";
-import Highlight from "../components/highlight";
 
 import Image from "next/image";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
@@ -17,7 +16,10 @@ export default function Home() {
           </Parallax>
           <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-4 z-10 flex flex-col justify-center items-center">
             <h1 className="w-max text-white text-7xl font-extrabold">
-              Our <span className="bg-gradient-to-tr from-acya to-red-700/80 bg-clip-text text-transparent">team</span>
+              Introducing the <span className="">team</span>
+            </h1>
+            <h1 className="w-max text-white text-5xl font-extrabold">
+              <span className="bg-gradient-to-tr from-acya to-red-700/80 bg-clip-text text-transparent">团队</span>介绍
             </h1>
           </div>
         </div>
