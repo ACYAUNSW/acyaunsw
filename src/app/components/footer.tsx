@@ -11,10 +11,10 @@ export default function Footer() {
       </div>
       <div className="flex flex-col space-y-4 items-center">
         <div className="flex pb-1 gap-3 border-b border-zinc-300">
-          <SocialIcon url="https://www.instagram.com/acyaunsw/" bgColor="transparent" fgColor="Salmon" className="hover:brightness-90 transition"/>
-          <SocialIcon url="https://www.facebook.com/acyaunsw/" bgColor="transparent" fgColor="CornflowerBlue" className="hover:brightness-90 transition"/>
-          <SocialIcon url="https://discord.gg/2XASXHcn8a" bgColor="transparent" fgColor="RoyalBlue" className="hover:brightness-90 transition"/>
-          <SocialIcon url="wechat" bgColor="transparent" fgColor="LimeGreen" className="hover:brightness-90 transition"/>
+          <SocialIcon url="https://www.instagram.com/acyaunsw/" bgColor="transparent" fgColor="gray" className="hover:brightness-90 transition"/>
+          <SocialIcon url="https://www.facebook.com/acyaunsw/" bgColor="transparent" fgColor="gray" className="hover:brightness-90 transition"/>
+          <SocialIcon url="https://discord.gg/2XASXHcn8a" bgColor="transparent" fgColor="gray" className="hover:brightness-90 transition"/>
+          <SocialIcon url="wechat" bgColor="transparent" fgColor="gray" className="hover:brightness-90 transition"/>
         </div>
         <span className="text-xs">&copy; UNSW Australia-China Youth Association </span>
       </div>
