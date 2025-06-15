@@ -14,13 +14,16 @@ export default function Home() {
           <Parallax speed={-20}>
             <Image src="/induction.jpg" alt="ACYA Event" width={1200} height={800} className="h-screen w-full object-cover brightness-80" />
           </Parallax>
-          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-y-4 z-10 flex flex-col justify-center items-center">
-            <h1 className="w-max text-white text-7xl font-extrabold">
-              Introducing the <span className="">team</span>
-            </h1>
-            <h1 className="w-max text-white text-5xl font-extrabold">
-              <span className="bg-gradient-to-tr from-acya to-red-700/80 bg-clip-text text-transparent">团队</span>介绍
-            </h1>
+          <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 space-x-6 z-10 flex flex-row justify-center items-center">
+            <div className="w-3 h-23 mt-1 bg-acya" />
+            <div className="flex flex-col text-white space-y-3 font-extrabold">
+              <h1 className="text-5xl">
+                Meet the team
+              </h1>
+              <h1 className="text-4xl">
+                我们的团队
+              </h1>
+            </div>
           </div>
         </div>
       </ParallaxProvider>

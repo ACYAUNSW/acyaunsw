@@ -32,7 +32,7 @@ export default function Home() {
       <div className="mx-50 my-36 space-y-16">
         <Header text="Our" important="mission" />
         <p>
-          Australia-Chinese Youth Association is a not-for-profit organisation with an aim to foster a translational community of 
+          Australia-China Youth Association is a not-for-profit organisation with an aim to foster a translational community of 
           young people who are interested in the Australia-China space and want to gain insight into these countries. Through our 
           social and professional events in the careers, education and people-to-people portfolio, we aim to encourage our members 
           to take initiative to develop and challenge themselves. 
