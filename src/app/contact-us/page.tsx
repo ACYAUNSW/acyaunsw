@@ -20,7 +20,6 @@ export default function Home() {
   return (
     <>
       <div className="mx-50 my-24 space-y-16">
-        {/* <Header text="How to" important="contact us" /> */}
         <Header text="For" important="general inquiries" />
         <div className="flex-col space-y-2">
           <div className="flex space-x-4 text-3xl">

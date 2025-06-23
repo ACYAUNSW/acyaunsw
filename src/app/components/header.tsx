@@ -10,7 +10,7 @@ export default function Header({ text, important }: HeaderProps) {
     <>
       <header className="mb-6 text-4xl font-extrabold leading-none tracking-tight md:text-5xl lg:text-5xl">
         {text}{' '}
-        <span className="underline underline-offset-4 decoration-8 decoration-red-500">
+        <span className="underline underline-offset-4 decoration-6 decoration-acya">
           {important}
         </span>
       </header>

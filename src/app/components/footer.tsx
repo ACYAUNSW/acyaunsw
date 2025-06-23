@@ -5,7 +5,7 @@ import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-200 px-12 py-4 flex justify-between items-center">
+    <footer className="bg-zinc-200 px-12 py-4 mt-8 flex justify-between items-center">
       <div className="text-white">
         <Image src="/logo-full.png" alt="ACYA Logo" width={150} height={50} className="brightness-100"/>
       </div>
