@@ -1,60 +1,49 @@
 import { XMarkIcon } from '@heroicons/react/20/solid'
 import { useState } from 'react';
 
-
-
 export default function NewsletterBanner() {
   const [isVisible, setIsVisible] = useState(true);
 
+  if (!isVisible) return null;
+
   return (
-    isVisible && (
-      <div className="relative isolate flex items-center gap-x-6 overflow-hidden bg-red-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-        <div
-          aria-hidden="true"
-          className="absolute top-1/2 left-[max(-7rem,calc(50%-52rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
-            }}
-            className="aspect-577/310 w-144.25 bg-linear-to-r from-[#f291a5] to-[#fc2828] opacity-30"
-          />
-        </div>
-        <div
-          aria-hidden="true"
-          className="absolute top-1/2 left-[max(45rem,calc(50%+8rem))] -z-10 -translate-y-1/2 transform-gpu blur-2xl"
-        >
-          <div
-            style={{
-              clipPath:
-                'polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)',
-            }}
-            className="aspect-577/310 w-144.25 bg-linear-to-r from-[#f291a5] to-[#fc2828] opacity-30"
-          />
-        </div>
-        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
-          <p className="text-sm/6 text-gray-900">
-            <strong className="font-semibold">ACYA Newsletter</strong>
-            <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
-              <circle r={1} cx={1} cy={1} />
-            </svg>
-            Your monthly dose of events and Chinese culture
-          </p>
-          <a
-            href="#"
-            className="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
-          >
-            Read now
-          </a>
-        </div>
-        <div className="flex flex-1 justify-end">
-          <button type="button" onClick={() => setIsVisible(false)} className="-m-3 p-3 focus-visible:-outline-offset-4">
-            <span className="sr-only">Dismiss</span>
-            <XMarkIcon aria-hidden="true" className="size-5 text-gray-900" />
-          </button>
-        </div>
+    <div className="relative isolate bg-red-50 px-4 py-3 sm:px-6">
+      <div className="absolute inset-0 -z-10 overflow-hidden opacity-20">
+        <div className="absolute left-0 top-1/2 h-[200%] w-[200%] -translate-y-1/2 bg-gradient-to-r from-[#f291a5] to-[#fc2828] [mask-image:radial-gradient(ellipse_at_center,white_20%,transparent_80%)]" />
       </div>
-    )
+
+      <div className="mx-auto flex max-w-7xl flex-col items-center gap-2 sm:flex-row sm:gap-4">
+        <div className="flex-1 text-center sm:text-left">
+          <p className="text-sm text-gray-900">
+            <strong className="font-semibold">ACYA Newsletter</strong>
+            <span className="hidden sm:inline sm:items-center">
+              <svg viewBox="0 0 2 2" aria-hidden="true" className="mx-2 inline size-0.5 fill-current">
+                <circle r={1} cx={1} cy={1} />
+              </svg>
+              <span>
+                Your monthly dose of events and Chinese culture
+              </span>
+            </span>
+          </p>
+        </div>
+
+        <a
+          href="https://drive.google.com/drive/folders/1NrD2hQJU7Pj9iQNxaBG6vwt3PcqfnirQ?usp=drive_link"
+          target="_blank"
+          className="shrink-0 rounded-full bg-gray-900 px-4 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
+        >
+          Read now
+        </a>
+
+        <button
+          type="button"
+          onClick={() => setIsVisible(false)}
+          className="absolute right-2 top-2 p-1 sm:static sm:-m-1.5 sm:p-1.5"
+        >
+          <span className="sr-only">Dismiss</span>
+          <XMarkIcon className="h-5 w-5 text-gray-900" />
+        </button>
+      </div>
+    </div>
   )
 }

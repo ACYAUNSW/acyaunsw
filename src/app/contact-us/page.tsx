@@ -19,7 +19,7 @@ import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 export default function Home() {
   return (
     <>
-      <div className="mx-50 my-24 space-y-16">
+      <div className="px-8 md:px-10 py-8 md:py-16 mx-auto max-w-7xl space-y-16">
         <Header text="For" important="general inquiries" />
         <div className="flex-col space-y-2">
           <div className="flex space-x-4 text-3xl">
@@ -39,7 +39,7 @@ export default function Home() {
           Please email <a href="mailto:unsw@acya.org.au" className="underline hover:decoration-acya bg-gradient-to-bl from-acya to-red-200/90 bg-clip-text hover:text-transparent">unsw@acya.org.au</a>.
         </div>
 
-        <Header text="For more on" important="ACYA" />
+        <Header text="For more on ACYA" important="nationally" />
         <div className="flex-col space-x-4 justify-center text-3xl">
           <a href="https://www.instagram.com/acya_national/" className="hover:brightness-90 transition text-[#E4405F]" aria-label="Instagram">
             <FontAwesomeIcon icon={faInstagram} />
