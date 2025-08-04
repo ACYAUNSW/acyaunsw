@@ -1,5 +1,5 @@
 import Badge from "./badge";
-
+import Image from "next/image";
 import { Event } from "../data/events-data";
 import { events } from "../data/events-data";
 
@@ -10,7 +10,7 @@ const EventCard: React.FC<{ event: Event }> = ({ event }) => {
   return (
     <div className="bg-white rounded-md overflow-hidden max-w-md">
       {eventDate > today && (
-        <img
+        <Image
           src={event.imageUrl}
           alt={event.title}
           className="w-full max-w-lg aspect-[16/9]"

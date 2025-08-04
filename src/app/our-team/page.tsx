@@ -4,7 +4,6 @@ import { useState } from "react";
 
 import Exec from "../components/exec";
 import Header from "../components/header";
-import Highlight from "../components/highlight";
 
 import Image from "next/image";
 import { ParallaxProvider, Parallax } from "react-scroll-parallax";
