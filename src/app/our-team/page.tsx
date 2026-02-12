@@ -243,7 +243,7 @@ export default function OurTeam() {
       <div className="max-w-7xl mx-auto px-8 md:px-10 py-8 md:py-16 space-y-8 md:space-y-12">
         <Header text="Our" important="executives" />
         <div className="flex flex-wrap justify-between space-y-8 md:py-6">
-          <Exec url="/exec/jason.jpeg" name="Jason Lao">President</Exec>
+          <Exec url="/exec/eddy.jpeg" name="Eddy Yue">President</Exec>
           <Exec url="/exec/eric.jpeg" name="Eric Duong">Treasurer</Exec>
           <Exec url="/exec/auston.jpeg" name="Auston Yang">Vice President Education</Exec>
           <Exec url="/exec/candy.jpeg" name="Candy Ma">Vice President Socials</Exec>
